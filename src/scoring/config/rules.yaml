@@ -1,0 +1,56 @@
+model_version: "v1.0.0"
+
+debt_ratio:
+  thresholds:
+    excellent: 0.20
+    good: 0.35
+    moderate: 0.50
+    high: 0.65
+  points:
+    excellent: 300
+    good: 240
+    moderate: 160
+    high: 80
+    critical: 20
+
+payment_history:
+  points:
+    perfect: 350
+    good: 260
+    fair: 180
+    poor: 90
+    very_poor: 20
+
+credit_age:
+  thresholds:
+    long: 84
+    good: 48
+    moderate: 24
+    short: 12
+  points:
+    long: 200
+    good: 160
+    moderate: 100
+    short: 50
+    very_short: 10
+
+age_score:
+  thresholds:
+    optimal_min: 30
+    optimal_max: 55
+    good_min: 25
+    good_max: 60
+  points:
+    optimal: 150
+    good: 110
+    acceptable: 70
+
+decisions:
+  approved_a: 800
+  approved_b: 700
+  review: 500
+
+credit_limit_multipliers:
+  approved: 4.0
+  review: 1.5
+  rejected: 0.0
